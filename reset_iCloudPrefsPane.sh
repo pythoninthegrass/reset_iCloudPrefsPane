@@ -40,6 +40,7 @@ if [ $? -ne 0 ]; then
     sudo reboot
 else
     echo "No changes were made. Reboot cancelled."
+    exit
 fi
 
 exit 0
