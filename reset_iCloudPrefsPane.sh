@@ -7,7 +7,7 @@
 # Current user
 loggedInUser=$(ls -l /dev/console | cut -d " " -f 4)
 
-# Install log
+# Logging
 logTime=$(date +%Y-%m-%d:%H:%M:%S)
 resetLog="/tmp/resetLog_$logTime.log"
 exec 1>>$resetLog
